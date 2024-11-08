@@ -1,34 +1,8 @@
-// import 'package:flutter/material.dart';
-// import 'package:flutter2_project/Detailpage.dart';
-// import 'package:flutter2_project/HomaPage.dart';
-
-// void main () {
-//   runApp(const MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       initialRoute: 'Homepage/',
-//       routes: {
-//         'Homepage/': (context) => Homepage(),
-//         'detail/': (context) => Detailpage(),
-//         // Homepage yang ujung kanan itu ikutin nama clas dari si file, kalo yang kiri nama bebas sesuain aja
-//       },
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
-import 'package:flutter2_project/HomaPage.dart';
-// import 'package:flutter2_project/homepage2.dart';
-import 'package:flutter2_project/listproduk.dart';
-import 'package:flutter2_project/message.dart';
-import 'package:flutter2_project/page2.dart';
-import 'package:flutter2_project/page3.dart';
+import 'package:flutter2_project/UjianPage1.dart';
+import 'package:flutter2_project/UjianPage2.dart';
+import 'package:flutter2_project/UjianPage3.dart';
+import 'package:flutter2_project/UjianPage4.dart';
 
 void main () {
   runApp(MyApp());
@@ -41,14 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'Homepage/',
+      initialRoute: 'UjianPage1/',
       routes: {
-        'Homepage/': (context) => Homepage(),
-        'Page2/': (context) => Page2(),
-        'Page3/': (context) => Page3(),
-        'Message/': (context) => Message(),
-        'Listproduct/': (context) => Produk()
-        // Homepage yang ujung kanan itu ikutin nama clas dari si file, kalo yang kiri nama bebas sesuain aja
+        'UjianPage1/': (context) => UjianPage1(),
+        'UjianPage2/': (context) => UjianPage2(),
+        'UjianPage3/': (context) => UjianPage3(),
+        'Ujianpage4' : (context) => UjianPage4(),
       },
     );
   }
